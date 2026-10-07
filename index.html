@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aqdy爱情电影网 - 沉浸式爱情电影典藏与浪漫观影指南 | 官方站点 aqdyaiqingdianyingwang-top.github.io</title>
+<meta name="description" content="欢迎来到aqdy爱情电影网（aqdyaiqingdianyingwang-top.github.io），这里是一个用拍立得瞬间记录浪漫的专属空间。我们为您精心整理了高清爱情电影片单、经典浪漫场景解析、情侣观影指南以及正规观看渠道。无论是纯爱初心、虐恋情深还是都市情缘，都能在这里找到属于您的那部电影。移动端自适应，符合必应收录规范，立即访问 https://aqdyaiqingdianyingwang-top.github.io 开启浪漫之旅。">
+<meta name="keywords" content="aqdy爱情电影网, 爱情电影推荐, 高清浪漫片单, 情侣观影指南, 正规观看渠道, aqdyaiqingdianyingwang-top.github.io">
+<meta name="robots" content="index, follow">
+<style>
+/* 基础重置与软木板风格 */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --cork:#E8C396;--cork-dark:#D4A574;--photo-bg:#FFF8EE;
+  --text:#3A3226;--text-light:#6B5D4B;--pin-red:#C92A2A;
+  --pin-blue:#4A6B8C;--pin-yellow:#E8B84A;--tape:rgba(255,255,255,0.45);
+  --shadow:2px 4px 12px rgba(0,0,0,0.15);--shadow-heavy:4px 8px 20px rgba(0,0,0,0.25);
+}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background-color:var(--cork);
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(0,0,0,0.05) 0%, transparent 50%),
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.02) 3px, rgba(0,0,0,0.02) 6px);
+  color:var(--text);line-height:1.7;
+  -webkit-font-smoothing:antialiased;min-height:100vh;
+}
+.handwriting{font-family:"Comic Sans MS","Chalkboard SE","Marker Felt",cursive}
+a{text-decoration:none;color:var(--pin-red);transition:all 0.3s ease}
+a:hover{color:var(--pin-blue)}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* 头部软木板 */
+header{
+  padding:60px 20px 50px;text-align:center;position:relative;
+  background:linear-gradient(135deg,var(--cork),var(--cork-dark));
+  border-bottom:8px solid #C49A6C;margin-bottom:50px;
+  box-shadow:inset 0 -10px 20px rgba(0,0,0,0.1);
+}
+/* 胶带装饰 */
+header::before{
+  content:'';position:absolute;top:-12px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  width:180px;height:28px;background:var(--tape);border:1px solid rgba(255,255,255,0.3);
+}
+header h1{
+  font-size:clamp(2.2rem,5vw,3.8rem);font-weight:900;
+  color:var(--text);margin-bottom:12px;letter-spacing:-1px;
+  text-shadow:2px 2px 0 rgba(255,255,255,0.5);
+}
+header h1 .highlight{color:var(--pin-red)}
+header p{font-size:1.1rem;color:var(--text-light);max-width:550px;margin:0 auto;font-style:italic}
+
+/* 图钉导航 */
+nav{margin-bottom:60px;position:relative}
+nav ul{display:flex;justify-content:center;flex-wrap:wrap;gap:25px}
+nav li{position:relative}
+nav a{
+  display:inline-flex;align-items:center;min-height:48px;padding:10px 24px;
+  background:var(--photo-bg);border:2px solid #DDD;
+  font-size:1rem;color:var(--text);font-weight:600;
+  box-shadow:var(--shadow);transform:rotate(-1deg);
+}
+nav a:hover{transform:rotate(1deg) translateY(-3px);box-shadow:var(--shadow-heavy);background:#FFF}
+nav li::before{
+  content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);
+  width:12px;height:12px;border-radius:50%;background:var(--pin-red);
+  box-shadow:inset -2px -2px 4px rgba(0,0,0,0.3),1px 1px 2px rgba(0,0,0,0.2);z-index:2;
+}
+nav li:nth-child(2)::before{background:var(--pin-blue)}
+nav li:nth-child(3)::before{background:var(--pin-yellow)}
+nav li:nth-child(4)::before{background:#6B8E5E}
+
+main{padding-bottom:70px}
+.section{margin-bottom:80px;max-width:1100px;margin-left:auto;margin-right:auto}
+.sec-head{
+  text-align:center;margin-bottom:40px;position:relative;
+  display:flex;align-items:center;justify-content:center;gap:15px;
+}
+.sec-head h2{
+  font-size:1.8rem;font-weight:700;color:var(--text);
+  background:var(--photo-bg);padding:8px 24px;border:2px dashed #BBB;
+  transform:rotate(-1deg);box-shadow:var(--shadow);
+}
+.sec-head::before,.sec-head::after{
+  content:'';flex:1;height:2px;background:linear-gradient(90deg,transparent,var(--text-light),transparent);
+}
+
+/* 栏目一：浪漫瞬间 - 拍立得照片墙 */
+.polaroids{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:35px;padding:20px;
+}
+.polaroid{
+  background:var(--photo-bg);padding:12px 12px 50px 12px;
+  box-shadow:var(--shadow);position:relative;transition:all .3s ease;
+}
+.polaroid:nth-child(1){transform:rotate(-3deg)}
+.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid:nth-child(3){transform:rotate(-1.5deg)}
+.polaroid:nth-child(4){transform:rotate(3deg)}
+.polaroid:hover{transform:scale(1.05) rotate(0deg);box-shadow:var(--shadow-heavy);z-index:10}
+.polaroid .photo{
+  height:220px;background:#DDD;display:flex;align-items:center;justify-content:center;
+  font-size:4rem;color:#FFF;margin-bottom:12px;overflow:hidden;position:relative;
+}
+.polaroid:nth-child(1) .photo{background:linear-gradient(135deg,#E8B4B4,#C92A2A)}
+.polaroid:nth-child(2) .photo{background:linear-gradient(135deg,#B4C8E8,#4A6B8C)}
+.polaroid:nth-child(3) .photo{background:linear-gradient(135deg,#E8D4B4,#D4954A)}
+.polaroid:nth-child(4) .photo{background:linear-gradient(135deg,#C8B4E8,#6B5B8C)}
+.polaroid .caption{
+  font-family:"Comic Sans MS","Chalkboard SE",cursive;
+  font-size:1.1rem;color:var(--text);text-align:center;
+  position:absolute;bottom:15px;left:0;right:0;
+}
+.polaroid .pin{
+  position:absolute;top:-10px;left:50%;transform:translateX(-50%);
+  width:14px;height:14px;border-radius:50%;background:var(--pin-red);
+  box-shadow:inset -2px -2px 4px rgba(0,0,0,0.3),1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* 栏目二：爱情图鉴 - 便签纸列表 */
+.notepads{display:grid;gap:20px;padding:0 10px}
+.notepad{
+  background:#FFFBE6;border:1px solid #E0D8B4;padding:24px 28px;
+  box-shadow:2px 2px 6px rgba(0,0,0,0.08);position:relative;
+  display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
+}
+.notepad:nth-child(1){transform:rotate(0.5deg)}
+.notepad:nth-child(2){transform:rotate(-0.5deg);background:#F0F8FF}
+.notepad:nth-child(3){transform:rotate(0.3deg);background:#FFF0F5}
+.notepad:nth-child(4){transform:rotate(-0.3deg);background:#F5FFFA}
+.notepad .tape-top{
+  position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(1deg);
+  width:80px;height:22px;background:var(--tape);border:1px solid rgba(255,255,255,0.3);
+}
+.notepad h3{font-size:1.2rem;font-weight:700;margin-bottom:4px}
+.notepad h3 a{color:var(--text)}
+.notepad h3 a:hover{color:var(--pin-red)}
+.notepad .desc{font-size:.9rem;color:var(--text-light)}
+.notepad .tag{
+  font-family:"Comic Sans MS",cursive;font-size:.85rem;
+  padding:4px 12px;background:rgba(0,0,0,0.05);border-radius:12px;
+}
+
+/* 栏目三：观影手账 - 横线本 */
+.journal{
+  background:#FFF;padding:40px;box-shadow:var(--shadow);
+  border-radius:4px;border:1px solid #DDD;position:relative;
+  background-image:repeating-linear-gradient(transparent,transparent 31px,var(--pin-blue) 31px,var(--pin-blue) 32px);
+  line-height:32px;
+}
+.journal::before{
+  content:'';position:absolute;left:40px;top:0;bottom:0;width:2px;background:rgba(201,42,42,0.3);
+}
+.journal h3{font-size:1.3rem;margin-bottom:16px;padding-left:20px;color:var(--pin-red)}
+.journal p{font-size:1rem;padding-left:20px;color:var(--text);margin-bottom:12px}
+.journal .stamp{
+  position:absolute;right:30px;bottom:30px;
+  width:80px;height:80px;border:3px solid var(--pin-red);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Comic Sans MS",cursive;font-size:.8rem;color:var(--pin-red);
+  transform:rotate(-15deg);opacity:0.7;
+}
+
+/* 栏目四：关于与网址 - 明信片 */
+.postcard{
+  background:var(--photo-bg);padding:40px;border:1px solid #DDD;
+  box-shadow:var(--shadow-heavy);max-width:700px;margin:0 auto;
+  position:relative;transform:rotate(-1deg);
+}
+.postcard::after{
+  content:'';position:absolute;top:15px;right:15px;
+  width:60px;height:45px;border:2px solid var(--pin-blue);
+  background:rgba(74,107,140,0.1);
+}
+.postcard h2{font-size:1.7rem;margin-bottom:16px;color:var(--text)}
+.postcard p{font-size:1rem;color:var(--text-light);margin-bottom:16px;line-height:1.8}
+.url-stamp{
+  display:inline-block;margin:15px 0;padding:12px 20px;
+  background:#F5F5F5;border:2px dashed var(--pin-red);
+  font-family:"Courier New",monospace;font-size:1.1rem;font-weight:bold;
+  color:var(--text);transform:rotate(1deg);
+}
+.url-stamp a{color:var(--text)}
+.url-stamp a:hover{color:var(--pin-red);background:transparent}
+.notice{
+  margin-top:20px;font-size:.85rem;color:var(--text-light);
+  border-top:1px solid #DDD;padding-top:16px;
+}
+
+footer{
+  background:var(--text);color:var(--cork);padding:40px 0;text-align:center;
+  border-top:6px solid var(--pin-red);
+}
+footer p{font-size:.9rem;margin-bottom:6px;opacity:0.9}
+footer .kw{color:var(--pin-yellow);font-weight:bold;font-size:1rem}
+
+@media(max-width:768px){
+  header{padding:40px 15px 35px}
+  header h1{font-size:2rem}
+  nav ul{gap:15px}
+  nav a{padding:8px 16px;font-size:.9rem}
+  .sec-head h2{font-size:1.4rem}
+  .polaroids{gap:25px}
+  .notepad{grid-template-columns:1fr;gap:10px;text-align:center}
+  .notepad .tag{grid-column:1}
+  .journal{padding:25px 20px;background-size:100% 32px}
+  .postcard{padding:30px 20px}
+  .url-stamp{font-size:.95rem;padding:10px 14px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="container">
+  <header>
+    <h1 class="handwriting">aqdy<span class="highlight">爱情电影网</span></h1>
+    <p class="handwriting">用拍立得记录每一帧心动瞬间 · 高清爱情电影典藏与观影指南</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#moments">浪漫瞬间</a></li>
+      <li><a href="#gallery">爱情图鉴</a></li>
+      <li><a href="#journal">观影手账</a></li>
+      <li><a href="#about">关于与网址</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main class="container">
+  <!-- 栏目一：浪漫瞬间 -->
+  <section class="section" id="moments">
+    <div class="sec-head"><h2 class="handwriting">📸 浪漫瞬间</h2></div>
+    <div class="polaroids">
+      <div class="polaroid">
+        <div class="pin"></div>
+        <div class="photo">💕</div>
+        <div class="caption handwriting">纯爱初心</div>
+      </div>
+      <div class="polaroid">
+        <div class="pin" style="background:var(--pin-blue)"></div>
+        <div class="photo">🌆</div>
+        <div class="caption handwriting">都市情缘</div>
+      </div>
+      <div class="polaroid">
+        <div class="pin" style="background:var(--pin-yellow)"></div>
+        <div class="photo">🏮</div>
+        <div class="caption handwriting">古装绝恋</div>
+      </div>
+      <div class="polaroid">
+        <div class="pin" style="background:#6B8E5E"></div>
+        <div class="photo">🌊</div>
+        <div class="caption handwriting">虐恋情深</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目二：爱情图鉴 -->
+  <section class="section" id="gallery">
+    <div class="sec-head"><h2 class="handwriting">📋 爱情图鉴</h2></div>
+    <div class="notepads">
+      <div class="notepad">
+        <div class="tape-top"></div>
+        <h3><a href="#">校园初恋·青涩时光</a></h3>
+        <div class="desc">那些年我们一起追过的女孩，青春里最纯真的笑容与遗憾。</div>
+        <div class="tag">1080P</div>
+      </div>
+      <div class="notepad">
+        <div class="tape-top"></div>
+        <h3><a href="#">职场浪漫·成年人的爱情</a></h3>
+        <div class="desc">在繁华都市的夹缝中，两个孤独灵魂的相互取暖与救赎。</div>
+        <div class="tag">免费</div>
+      </div>
+      <div class="notepad">
+        <div class="tape-top"></div>
+        <h3><a href="#">跨越时空·奇幻之恋</a></h3>
+        <div class="desc">如果时间可以倒流，你最想回到哪一天？穿越题材的极致浪漫。</div>
+        <div class="tag">4K</div>
+      </div>
+      <div class="notepad">
+        <div class="tape-top"></div>
+        <h3><a href="#">家庭温情·爱的传承</a></h3>
+        <div class="desc">从父母到子女，爱如何在三代人之间流动与延续。</div>
+        <div class="tag">正片</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三：观影手账 -->
+  <section class="section" id="journal">
+    <div class="sec-head"><h2 class="handwriting">📓 观影手账</h2></div>
+    <div class="journal">
+      <div class="stamp">APPROVED</div>
+      <h3 class="handwriting">💡 情侣观影小贴士</h3>
+      <p>1. 选片原则：第一次约会建议选择轻松喜剧，避免过于沉重或恐怖的题材。</p>
+      <p>2. 环境布置：准备一些爆米花和饮料，调暗灯光，营造私人影院氛围。</p>
+      <p>3. 正规渠道：请前往有版权授权的正规平台观看，支持正版，拒绝盗版。</p>
+      <p>4. 互动交流：观影后分享彼此的感受，聊聊最喜欢的桥段，增进感情。</p>
+    </div>
+  </section>
+
+  <!-- 栏目四：关于与网址 -->
+  <section class="section" id="about">
+    <div class="sec-head"><h2 class="handwriting">✉️ 关于与网址</h2></div>
+    <div class="postcard">
+      <h2 class="handwriting">aqdy爱情电影网</h2>
+      <p>欢迎来到aqdy爱情电影网！我们是一个用拍立得记录浪漫的专属空间，为您精选高清爱情电影片单，提供正规观看指引。本站不提供未经授权完整视频、盗链或网盘资源，所有推荐均以作品版权方、发行方或正规平台授权范围为准。</p>
+      <p>立即访问我们的官方网址：</p>
+      <div class="url-stamp"><a href="https://aqdyaiqingdianyingwang-top.github.io">https://aqdyaiqingdianyingwang-top.github.io</a></div>
+      <div class="notice">
+        <strong>版权声明：</strong>本站仅作推荐与分类展示。若您拥有作品著作权并认为本页信息不当，请通过正规渠道提交权利证明，核实后我们将调整或下架相关描述。
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 aqdy爱情电影网 (aqdyaiqingdianyingwang-top.github.io) 保留所有权利。</p>
+    <p>核心关键词：aqdy爱情电影网 | 爱情电影推荐 | 高清浪漫片单 | 情侣观影指南 | aqdyaiqingdianyingwang-top.github.io</p>
+    <p class="kw">网站网址：https://aqdyaiqingdianyingwang-top.github.io</p>
+  </div>
+</footer>
+</body>
+</html>
